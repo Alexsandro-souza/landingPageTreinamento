@@ -3,10 +3,12 @@
 <head>
 	<title>Minha Landing Page</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
-	<meta charset="description" content="Conteúdo do meu site.">
-	<meta charset="keywords" content="palavras,separadas,por,virgula">
-	<meta charset="author" content="Alexsandro souza" />
-	<meta charset="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="description" content="Conteúdo do meu site.">
+	<meta name="keywords" content="palavras,separadas,por,virgula">
+	<meta name="author" content="Alexsandro souza" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
 </head>
 <body>
 
@@ -18,7 +20,7 @@
 	</div><!--container-->
 </header>
 <section class="banner">
-	<div class="banner-bg">
+	<div class="banner-bg center">
 		<div class="form">
 			<div class="form-wraper">
 				<h2>pode acreditar, por dentro é ainda mais bonito</h2>
@@ -30,15 +32,60 @@
 				<input class="w100" type="email" required name="email"/>
 				<span>Telefone*</span>
 				<input class="w100" type="tel" required name="telefone"/>
-				<input class="bt"type="submit" required name="acao"/>
+				<input class="bt"type="submit" value="enviar" required name="acao"/>
 			</form><!--form-banner-->
 		</div><!--form-->
-		<div class="clear"></div>
-		
-	
-		
+		<div class="clear"></div>		
 	</div><!--banner-bg-->
 </section><!--banner-->
+<section class="chamada">
+	<div class="seta"></div><!--seta-->		
+		<div class="center">
+			<div>
+				<h2 style="font-weight: normal;">MINHA CHAMADA PARA O EMPREENDIMENTO</h2>
+				<p>Alguma mensagem para a chamada</p>
+			</div>
+		</div><!--center-->
+	
+</section><!--chamada-->
+<section class="mosaico">
+	<div class="mosaico-container">
+		<div style="flex-direction: row-reverse;" class="mosaicoflex center">
+			<div style="background-image: url(./imagens/mosaico1.jpg);" class="mosaico-img">
+			</div><!--mosaico-img-->
+			<div class="mosaico-texto">
+				<p>Esta sala é realmente incrível!<br> Ele é espaçoso e bem iluminado, com uma grande
+					 janela que permite a entrada de muita luz natural. A decoração é moderna e 
+					 elegante, com paredes brancas e um lindo piso de madeira.</p>
+			</div><!--mosaico-img-->
+		</div><!--mosaicoflex-->
+		<div class="mosaicoflex center">
+			<div style="background-image: url(./imagens/mosaico3.jpg);" class="mosaico-img">
+			</div><!--mosaico-img-->
+			<div class="mosaico-texto">
+				<p>Ao lado da mesa de sinuca, você encontra uma mesa de air hockey, com iluminação
+					colorida e um sistema de ventilação potente que garante uma jogabilidade
+					emocionante e estimulante. A mesa de air hockey é grande o suficiente para
+					acomodar vários jogadores, tornando-a uma opção divertida para toda a família.</p>
+			</div><!--mosaico-img-->
+		</div><!--mosaicoflex-->
+		<div style="flex-direction: row-reverse;" class="mosaicoflex center">
+			<div style="background-image: url(./imagens/mosaico2.jpg);" class="mosaico-img">
+			</div><!--mosaico-img-->
+			<div class="mosaico-texto">
+				<p>A iluminação é ótima, com diversas luminárias estrategicamente posicionadas
+					para criar um ambiente aconchegante e acolhedor. A temperatura é regulada
+					por um sistema de ar condicionado, o que significa que você pode ajustar
+					a temperatura do quarto de acordo com suas orelhas.</p>
+			</div><!--mosaico-img-->
+		</div><!--mosaicoflex-->
+	</div><!--mosaico-container-->
+</section><!--mosaico-->
+<footer class="center">
+	<div class="rodape"></div>
+	<small>&copy; Copyright 2023, todos os direitos reservados</small>
+	
+</footer>
 
 </body>
 </html>

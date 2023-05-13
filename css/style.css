@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -13,8 +14,12 @@ html,body{
 /**Divs gerais!*/
 .container{
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1024px;
 	margin:0 auto;
+}
+.center{
+	max-width: 1024px;
+	margin: 0 auto;
 }
 
 .clear{
@@ -26,6 +31,7 @@ header{
 	background-color: #D6D6D6;
 	padding:10px 2% 30px 2%;
 }
+
 
 .logo-1{
 	float: left;
@@ -49,10 +55,11 @@ header{
 	/*background-color: green;*/
 }
 
+
+/*Section Banner*/
+
 section.banner{
-	max-width: 1000px;
-	padding: 0 2%;
-	margin: 0 auto;
+	width: 100%;
 }
 
 section.banner .banner-bg{
@@ -62,38 +69,31 @@ section.banner .banner-bg{
 	background-position: center;
 	height: 500px;
 	width: 100%;
+	
+	
 }
 
 .banner-bg > .form{
 	width: 350px;
+	max-width: 350px;
 	float: right;
 	height: 500px;
 	position: relative;
 	top: -2%;
 	margin-right: 30px;
-}
-
-.banner-bg > .form > .form-banner{
-	background-color: rgb(240, 241, 242);
-	height: 89%;
-	padding: 20px 30px 35px 30px;
-	line-height: 30px;
-}
-
-.banner-bg > .form > .form-banner .w100{
-	width: 100%;
-	outline: none;
-	height: 30px;
-	padding-left: 10px;
+	z-index: 2;
 	
 }
 
-.banner-bg > .form > .form-banner .w100:not(:first-child){
-	padding-top: 30px;
+.banner-bg > .form > .form-banner{
+	background-color: rgba(240, 241, 242, 0.9);
+	height: 89%;
+	padding: 20px 30px 35px 30px;
+	-webkit-box-shadow: 6px 6px 5px 0px rgba(10,10,10,1);
+	-moz-box-shadow: 6px 6px 5px 0px rgba(10,10,10,1);
+	box-shadow: 6px 6px 5px 0px rgba(10,10,10,1);
+
 }
-
-
-
 .banner-bg .form .form-wraper h2{
 	background-color: #9e9ea0;
 	padding: 18px 5px;
@@ -101,12 +101,139 @@ section.banner .banner-bg{
 	text-transform: uppercase;
 	text-align: center;
 	font-weight: normal;
+	-webkit-box-shadow: 6px 6px 5px 0px rgba(10,10,10,1);
+	-moz-box-shadow: 6px 6px 5px 0px rgba(10,10,10,1);
+	box-shadow: 6px 6px 5px 0px rgba(10,10,10,1);
 }
 
-@media screen and (max-width: 510px){
+.banner-bg > .form > .form-banner .w100{
+	width: 100%;
+	outline: none;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	
+}
+
+
+.banner-bg > .form > .form-banner span{
+	padding-left: 8px;
+	padding-bottom: 3px;
+	display: block;
+}
+.banner-bg > .form > .form-banner span:not(:first-of-type){
+	margin-top: 40px;
+	
+	
+}
+
+.banner-bg > .form > .form-banner .bt{
+	background-color: #033c50;
+	color: white;
+	text-transform: uppercase;
+	padding: 10px 0;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	font-size: 20px;
+	margin-top: 35px;
+	border-radius: 3px;
+}
+
+/*End Section Banner*/
+
+
+/*Section chamada*/
+section.chamada{
+	position: relative;
+	z-index: 1;
+}
+section.chamada .seta{
+	background-image: url(../imagens/arrow.png);
+	top: -27px;
+	right: 50%;
+	width: 50px;
+	height: 55px;	
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+}
+section.chamada div div{
+	background-color:  #29526d;	
+	height: 150px;	
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	width: 100%;
+}
+
+section.chamada div > div{
+	padding: 28px 0;
+	line-height: 28px;}
+/*End Section chamada*/
+
+/*Section mosaico*/
+
+.mosaicoflex{	
+	display: flex;	
+	width: 100%;
+	margin-top: 2px;
+	background-color: #376c90;
+}
+.mosaico-img{
+	padding-top: 250px;
+	width: 60%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.mosaico-texto{
+	width: 40%;
+	color: white;
+	font-size: 19px;
+	padding: 40px 25px;
+}
+
+/*End Section mosaico*/
+
+/*Footer*/
+footer.center{
+	background-color: #D6D6D6;
+	height: 90px;
+	padding-top: 13px;
+}
+
+
+footer.center .rodape{
+	height: 80px;
+	width: 130px;	
+	margin:0 auto;	
+	background-image: url('../imagens/logo1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/*End footer*/
+
+
+
+/* media screen */
+
+
+@media screen and (max-width: 570px){
+	section.chamada div > div{
+		padding: 30px 0 20px 0;
+		line-height: 28px;}
+	
+}
+
+@media screen and (max-width: 650px){
 
 	header{
 		text-align: center;
+		line-height: 0px;
 	}
 
 	.logo-1,.logo-2{
@@ -114,6 +241,44 @@ section.banner .banner-bg{
 		display: inline-block;
 		float: none;
 	}
+}
+@media screen and (max-width: 710px){
+	.mosaicoflex{	
+		display: block;				
+		
+	}
+	.mosaico-img{
+		width: 100%;
+		
+	}
+	
+	.mosaico-texto{
+		width: 100%;
+		border-top: 2px solid white;
+		
+	}
+
+}
 
 
+@media screen and (max-width: 850px){
+	
+
+	.banner-bg{
+		text-align: center;
+		height: auto;		
+	}
+	
+	.banner-bg > .form{
+		float: none;				
+		display: inline-block;
+		min-width: 300px;
+		top: -5%;		
+	}
+	.banner-bg > .form span{
+		text-align: left;
+	}
+	section.chamada .seta{
+		display: none;
+	}
 }
